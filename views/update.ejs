@@ -1,0 +1,58 @@
+<body style="background-color:#DACEDB;">
+
+
+<ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li class="active">Update Player</a></li>
+</ol>
+
+<br/>
+<%- partial ('partials/statusmessage.ejs') %>
+
+<h2>Update Player</h2>
+<form action="/update" method="POST" class="form-horizontal">
+  <div class="form-group">
+    <label for="id" class="col-sm-2 control-label">Player ID</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="id" name="id" placeholder="Player ID">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="playerName" class="col-sm-2 control-label">Player Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="playerName" name="playerName" placeholder="Player Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="playerAge" class="col-sm-2 control-label">Player Age</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="playerAge" name="playerAge"  placeholder="Player Age">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="playerPosition" class="col-sm-2 control-label">Player Position</label>
+    <div class="col-sm-10">
+      <input type="playerPosition" class="form-control" id="playerPosition" name="playerPosition" placeholder="Player Position">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="parentContact" class="col-sm-2 control-label">Parent Contact</label>
+    <div class="col-sm-10">
+      <input type="parentContact" class="form-control" id="parentContact" name="parentContact" placeholder="Parent Contact">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="parentPhone" class="col-sm-2 control-label">Parent Phone</label>
+    <div class="col-sm-10">
+      <input type="parentPhone" class="form-control" id="parentPhone" name="parentPhone" placeholder="Parent Phone">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Update Player</button>
+    </div>
+  </div>
+</form>
+
+</body>
